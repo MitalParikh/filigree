@@ -1,0 +1,64 @@
+div.about{ 
+ display: block;
+ position: absolute;
+ top: 25%;
+ margin-left: 0px;
+ width: 98%;
+ z-index: 0;
+}
+
+div.row{
+ position: relative; 
+ --display: flex;
+ height: 550px;
+}
+
+img.abtLogo{
+  --padding: 5px;
+  width: 20%;
+  vertical-align: top;
+  border-radius:100%;
+  border: 2px solid black;
+  margin-left: 10px;
+
+}
+
+@media (min-width: 600px) {
+  div.row{
+	height: 350px;
+  }
+}
+
+textarea.writeup{
+  text-align: justify;
+  wordWrap: break-word;
+  border: none;
+  overflow: auto;
+  font-family: Avenir Light; 
+  color: #766546;
+  font-size:22px;
+  padding: 5px; 
+  height: 100%;
+  width: 70%;
+}
+
+button.play {
+  padding: 2px;
+  border-radius: 50%;
+  width: 4%;
+  height: auto;
+  margin-top: 20%;
+  margin-left: 25%; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);  
+  z-index: 2;
+  border: none;
+}
+
+.scrollRight{
+  position: relative;
+  width: 60%;
+  align: center;
+}

@@ -1,0 +1,151 @@
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.25s;
+}
+
+.options{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 95%;
+  width: calc(90% -90px);
+  margin-left: 10px;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 718px){
+  .options{
+	min-width: 520px;
+  }
+
+  .options .option:nth-child(5){
+	display: none;
+  }
+}
+
+@media screen and (max-width: 638px){
+  .options{
+	min-width: 440px;
+  }
+
+  .options .option:nth-child(4){
+	display: none;
+  }
+}
+
+@media screen and (max-width: 558px){
+  .options{
+	min-width: 360px;
+  }
+
+  .options .option:nth-child(3){
+	display: none;
+  }
+}
+
+@media screen and (max-width: 478px){
+  .options{
+	min-width: 280px;
+  }
+
+  .options .option:nth-child(2){
+	display: none;
+  }
+}
+
+.options .option{
+  position: relative;
+  overflow: hidden;
+  min-width: 15px;
+  margin: 3px;
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.09;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.options .option.active{
+  flex-grow: 10000;
+  transform: scale(1);
+  min-width: 600px;
+  margin: 0;
+  border-radius: 40px;
+  opacity: 1;
+  background-size: auto 100%;
+}
+
+.options .option.active .shadow{
+  box-shadow: inset 0 -120px 120px -120px #000, inset 0 -120px 120px -100px #000;
+}
+
+.options .option.active .label{
+  bottom: 20px;
+  left: 20px;
+}
+
+.options .option.active .label .info > div{
+  left: 0;
+  opacity: 1;
+}
+
+.options .option:not(.active){
+  flex-grow: 1;
+  border-radius: 30px;
+}
+
+.options .option:not(.active) .shadow{
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0 -120px #000, inset 0, -120px 0, -100px #000;
+}
+
+.options .option:not(.active) .label{
+  bottom: 10px; 
+  left: 10px;
+}
+
+.options .option:not(.active).label .info > div {
+  left: 20px; 
+  opacity: 0;
+}
+
+.options .option .shadow{
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.options .option .label{
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 40px;
+}
+
+.options .option .label .icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  max-width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #766546;
+  color: var(--defaultBackground);
+  opacity: 1;
+}
+
+
