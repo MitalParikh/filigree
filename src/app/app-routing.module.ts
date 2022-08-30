@@ -8,9 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
 		{ path: '/about', component: AboutComponent },
-		{ path: 'filigree/projects', component: ProjectsComponent },
-		{ path: 'filigree/products', component: ProductsComponent },
-		{ path: 'filigree/gallery', component: GalleryComponent },
+		{ path: '/filigree/projects', component: ProjectsComponent },
+		{ path: '/filigree/products', component: ProductsComponent },
+		{ path: '/filigree/gallery', component: GalleryComponent },
 		{ path: '',   redirectTo: '/about', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
