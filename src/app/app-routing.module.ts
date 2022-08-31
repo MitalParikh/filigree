@@ -8,15 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
 		{ path: '/about', component: AboutComponent },
-<<<<<<< Updated upstream
 		{ path: '/projects', component: ProjectsComponent },
 		{ path: '/products', component: ProductsComponent },
 		{ path: '/gallery', component: GalleryComponent },
-=======
-		{ path: 'projects', component: ProjectsComponent },
-		{ path: 'products', component: ProductsComponent },
-		{ path: 'gallery', component: GalleryComponent },
->>>>>>> Stashed changes
 		{ path: '',   redirectTo: '/about', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
