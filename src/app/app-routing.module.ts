@@ -12,7 +12,9 @@ const routes: Routes = [
 		{ path: 'products', component: ProductsComponent },
 		{ path: 'gallery', component: GalleryComponent },
 		{ path: '',   redirectTo: 'about', pathMatch: 'full' }, // redirect to `first-component`
-		
+		{ path: '/about',   redirectTo: 'about', pathMatch: 'full' }, // redirect to `first-component`
+		{ path: '/projects',   redirectTo: 'projects', pathMatch: 'full' }, // redirect to `first-component`
+		{ path: '/products',   redirectTo: 'products', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
 @NgModule({
