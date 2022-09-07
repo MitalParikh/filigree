@@ -1,0 +1,1 @@
+function slideShowCtrl(i){var e,s=0;i.showSlides=function(){var l=document.getElementsByClassName("mySlides");for(e=0;e<l.length;e++)l[e].style.display="none";++s>l.length&&(s=1),l[s-1].style.display="block",setTimeout(showSlides,2e3)}}
