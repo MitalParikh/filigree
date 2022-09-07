@@ -12,6 +12,7 @@ const routes: Routes = [
 		{ path: 'products', component: ProductsComponent },
 		{ path: 'gallery', component: GalleryComponent },
 		{ path: '',   redirectTo: 'about', pathMatch: 'full' }, // redirect to `first-component`
+		
 ];
 
 @NgModule({
