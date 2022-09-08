@@ -8,13 +8,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
 		{ path: 'about', component: AboutComponent },
-		{ path: 'projects', component: ProjectsComponent },
-		{ path: 'products', component: ProductsComponent },
-		{ path: 'gallery', component: GalleryComponent },
+		{ path: 'projects', component: ProjectsComponent , pathMatch: 'full'},
+		{ path: 'products', component: ProductsComponent , pathMatch: 'full'},
+		{ path: 'gallery', component: GalleryComponent , pathMatch: 'full'},
 		{ path: '',   redirectTo: 'about', pathMatch: 'full' }, // redirect to `first-component`
-		{ path: '/about',   redirectTo: 'about', pathMatch: 'full' }, // redirect to `first-component`
-		{ path: '/projects',   redirectTo: 'projects', pathMatch: 'full' }, // redirect to `first-component`
-		{ path: '/products',   redirectTo: 'products', pathMatch: 'full' }, // redirect to `first-component`
+
 ];
 
 @NgModule({
