@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
-		{ path: 'filigree/about', component: AboutComponent },
+		{ path: 'about', component: AboutComponent },
 		{ path: 'filigree/projects', component: ProjectsComponent , pathMatch: 'full'},
 		{ path: 'filigree/products', component: ProductsComponent , pathMatch: 'full'},
 		{ path: 'gallery', component: GalleryComponent , pathMatch: 'full'},
