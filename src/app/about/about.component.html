@@ -1,0 +1,36 @@
+<div class="about">
+	
+<div class="row" id="stripe1">
+	<span class="column1">
+		<img class="abtLogo" src={{config.aboutImgUrl}} alt="">
+	</span>
+	<span class="column2">
+		  <textarea class="writeup" >{{aboutText}}</textarea>
+	</span>
+</div>
+
+
+<marquee class="scrollingText" behavior="scroll" direction="left">Welcome to the world of fabriculture!</marquee>
+
+
+
+<div class="row" id="stripe2" inView (visible)="onVisibilityChanged($any($event))" >
+    
+    <app-slide-show class="column3" style="float: left; top: 6%; " [slidesPath]="config.fabriculture" [slides]="slidesToShow" [flag]="flag"></app-slide-show>
+    <div class="column4 fontsTitle" style="text-align: right; top: 15%; float: right; color: black; height: 5px;">
+		Our Designs
+	</div>    
+</div>
+
+<div class="row" id="gap"></div>
+<div class="row" id="gap"></div>
+
+<div class="row" id="stripe3">
+	<div class="column6 fontsTitle" style="color: black; ">
+		Our Work
+	</div>
+	<app-image-slider class="column5" [slidesPath]="config.ourWork" [slides]="config.ourWorkSlides"></app-image-slider>
+      
+
+</div>
+
