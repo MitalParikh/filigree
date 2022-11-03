@@ -1,0 +1,1 @@
+# filigree repositoy is a portfolio website for Filigree Fabriculture Organization. It is an Interior designing organization from India. The website (once fully functional) showcases the work and processes of organization. Written in Angular. work is under progress to add features like feedback / blog section, projects slideshows etc.. Thank you.
